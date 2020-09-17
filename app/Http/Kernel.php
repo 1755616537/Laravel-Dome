@@ -7,10 +7,11 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 class Kernel extends HttpKernel
 {
     /**
+     * 全局中间件注册
      * The application's global HTTP middleware stack.
      *
      * These middleware are run during every request to your application.
-     *
+     * 
      * @var array
      */
     protected $middleware = [
@@ -46,6 +47,7 @@ class Kernel extends HttpKernel
     ];
 
     /**
+     * 自定义中间件注册，需要手动添加
      * The application's route middleware.
      *
      * These middleware may be assigned to groups or used individually.
