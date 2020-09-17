@@ -5,20 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Listen for XDebug",
-            "type": "php",
+            "type": "pwa-chrome",
             "request": "launch",
-            "port": 9000,
-            "stopOnEntry":false,
-            "log": false
-        },
-        {
-            "name": "Launch currently open script",
-            "type": "php",
-            "request": "launch",
-            "program": "${workspaceRoot}/public/index.php",
-            "cwd": "${workspaceRoot}/public/",
-            "port": 9000
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }
